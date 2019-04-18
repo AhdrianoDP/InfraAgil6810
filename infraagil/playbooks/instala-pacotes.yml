@@ -1,0 +1,9 @@
+---
+- name: Minha primeira playbook do Ansible
+  hosts: all]
+  become: yes
+  tasks:
+  - name: Garantindo a presença do VIM
+    package: 
+      name: vim
+      state: present

@@ -1,0 +1,5 @@
+---
+- name: Playbook de Chamada da Role
+  hosts: all
+  roles:
+    - capuz_vermelho

@@ -1,0 +1,20 @@
+- name: Instalando o UBUNTU
+  package:
+    name: ubuntu
+    state: present
+
+- name: Iniciando UBUNTU
+  systemd:
+    name: ubuntu
+    state: restarted
+
+- name: Pagina HTML
+  template:
+    src: index.html
+    dest: /var/www/html/index.html
+
+- name:
+  get_url:
+    url: https://apt.puppetlabs.com/puppet6-release-xenial.deb
+    dest: /var/www/html/imagem.jpg
+
